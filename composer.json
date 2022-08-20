@@ -1,0 +1,39 @@
+{
+    "name": "princeferozepuria/http-response",
+    "description": "Send HTTP Json response with automatic status code via pre-configured methods",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "laravel",
+        "http",
+        "json",
+        "response"
+    ],
+    "homepage": "https://github.com/navjotsinghprince/http-response",
+    "autoload": {
+        "psr-4": {
+            "Prince\\Ferozepuria\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Prince Ferozepuria",
+            "email": "navjotsinghprince1@gmail.com",
+            "role": "Software Developer",
+            "homepage": "https://navjotsinghprince.com/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/navjotsinghprince/http-response"
+    },
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Prince\\Ferozepuria\\HTTPResponseServiceProvider"
+            ]
+        }
+    }
+}
