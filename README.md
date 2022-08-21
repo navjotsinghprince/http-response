@@ -122,7 +122,6 @@ class TestController extends HTTPResponse {
 
 ```
 
-
 ## Authors
 :point_right: [Navjot Singh Prince](https://github.com/navjotsinghprince)
 
