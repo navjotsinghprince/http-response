@@ -132,6 +132,10 @@ who participated in this package.
 ## Contact
 If you discover any question within package, please send an e-mail to Prince Ferozepuria via [fzr@navjotsinghprince.com](mailto:fzr@navjotsinghprince.com). Your all questions will be answered.
 
+## Changelog
+Please see [changelog.md](changelog.md) for what has changed recently.
+
+
 ## Buy Me A Coffee! :coffee: 
 Feel free to buy me a coffee at [__Buy me a coffee! :coffee:__]( https://ko-fi.com/princeferozepuria), I would be really grateful for anything, be it coffee or just a kind comment towards my work, that helps me a lot.
 
