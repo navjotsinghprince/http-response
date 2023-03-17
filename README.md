@@ -1,4 +1,4 @@
-## HTTP Response Introduction
+## HTTP Response Package Introduction
 [![License](https://img.shields.io/github/license/navjotsinghprince/http-response)](https://github.com/navjotsinghprince/http-response)
 
 Package that send HTTP json response with status codes automatically with ease pre-configured methods.
