@@ -53,7 +53,7 @@ class TestController extends HTTPResponse {
             "is_empty" => "",
         ];
 
-        return $this->sendSuccess("success",$response);
+        return $this->sendSuccess(SUCCESS,$response);
 
       }
 
@@ -69,7 +69,7 @@ class TestController extends HTTPResponse {
         ]);
 
         if ($validator->fails()) {
-            return $this->validationFailed("all fields are required", $validator->errors());
+            return $this->validationFailed(ALL_FIELDS_REQUIRED, $validator->errors());
         }
 
       }
@@ -121,6 +121,10 @@ class TestController extends HTTPResponse {
     return $this->dataProcessFailed("data process failed message");
 
 ```
+
+
+## Tips
+:bulb: **Tip:** Use Available Messages: SUCCESS , FAILED , ALL_FIELDS_REQUIRED , SOMETHING_WRONG , SOMETHING_WRONG_LATER
 
 ## Authors
 :point_right: [Navjot Singh Prince](https://github.com/navjotsinghprince)
