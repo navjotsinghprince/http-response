@@ -18,6 +18,11 @@ use Illuminate\Support\Facades\Response;
  *  
  */
 
+const SUCCESS = "Success";
+const ALL_FIELDS_REQUIRED = "All fields are required";
+const SOMETHING_WRONG = "Something went wrong !";
+const SOMETHING_WRONG_LATER = "Something went wrong ! Please try again later.";
+
 class HTTPResponse extends Controller
 {
 
@@ -42,7 +47,6 @@ class HTTPResponse extends Controller
     {
         $response = [
             "status" => self::$HTTP_OK,
-            "response" => self::$HTTP_OK,
             'message' => $message,
         ];
         if ($data != null) {
@@ -66,7 +70,6 @@ class HTTPResponse extends Controller
     {
         $response = [
             "status" => self::$HTTP_OK,
-            "response" => self::$HTTP_OK,
             'message' => $message,
             $key => $value,
         ];
@@ -85,7 +88,6 @@ class HTTPResponse extends Controller
     {
         $response = [
             "status" => self::$HTTP_CONFLICT,
-            "response" => self::$HTTP_CONFLICT,
             'message' => $message,
         ];
         if ($data != null) {
@@ -106,7 +108,6 @@ class HTTPResponse extends Controller
     {
         $response = [
             "status" => self::$HTTP_UNPROCESSABLE_ENTITY,
-            "response" => self::$HTTP_UNPROCESSABLE_ENTITY,
             'message' => $message,
             'errors' => $errors,
         ];
@@ -125,7 +126,6 @@ class HTTPResponse extends Controller
     {
         $response = [
             "status" => self::$HTTP_NOT_FOUND,
-            "response" => self::$HTTP_NOT_FOUND,
             'message' => $message,
             'errors' => is_null($errors) ? 'not specified' : $errors,
         ];
@@ -144,7 +144,6 @@ class HTTPResponse extends Controller
     {
         $response = [
             "status" => self::$HTTP_UNAUTHORIZED,
-            "response" => self::$HTTP_UNAUTHORIZED,
             'message' => $message,
             'errors' => [$message]
         ];
@@ -162,7 +161,6 @@ class HTTPResponse extends Controller
     {
         $response = [
             "status" => self::$HTTP_FORBIDDEN,
-            "response" => self::$HTTP_FORBIDDEN,
             'message' => $message,
         ];
         return Response::json($response, self::$HTTP_FORBIDDEN);
@@ -179,7 +177,6 @@ class HTTPResponse extends Controller
     {
         $response = [
             "status" => self::$HTTP_BAD_REQUEST,
-            "response" => self::$HTTP_BAD_REQUEST,
             'message' => $message,
             'errors' => [$message]
         ];
