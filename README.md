@@ -1,7 +1,7 @@
 ## HTTP Response Package Introduction
 [![License](https://img.shields.io/github/license/navjotsinghprince/http-response)](https://github.com/navjotsinghprince/http-response)
 
-Package that send HTTP json response with status codes automatically with ease pre-configured methods.
+Laravel Composer Package for Automated API Response Generation, Including Pre-configured Methods for Status Code Handling. 
 
 
 ### Installation 
