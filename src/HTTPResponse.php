@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Response;
  */
 
 const SUCCESS = "Success";
+const FAILED = "Failed";
 const ALL_FIELDS_REQUIRED = "All fields are required";
 const SOMETHING_WRONG = "Something went wrong !";
 const SOMETHING_WRONG_LATER = "Something went wrong ! Please try again later.";
